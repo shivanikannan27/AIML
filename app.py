@@ -62,9 +62,9 @@ def play():
     if player == cpu:
         result = "draw"
     elif WIN_MAP[player] == cpu:
-        result = "you win"
+        result = "Congrats you won the game!"
     else:
-        result = "you lose"
+        result = "Oops you Lose the Game"
 
     return jsonify({"player": player, "cpu": cpu, "result": result})
 
